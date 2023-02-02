@@ -27,7 +27,7 @@ document.querySelector('.input-area .del-button').addEventListener('click', () =
     document.querySelector('input').value = ''
 })
 
-document.querySelector('body').addEventListener('click', (e) => {
+document.querySelector('html').addEventListener('click', (e) => {
     document.querySelector('ul').style.display = 'none'
 })
 
