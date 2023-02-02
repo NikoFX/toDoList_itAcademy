@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+.card {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    border: 2px solid silver;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px silver;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    width: 100%;
+    height: 30px;
+    background-color: silver;
+}
+
+.sort{
+    width: 80%;
+}
+
+#sort-icon{
+    cursor: pointer;
+}
+
+.sort-icon-down-active{
+    width: 25px;
+    height: 25px;
+    background-image: url('img/down_active.svg');
+    background-repeat: no-repeat;
+    float: right;
+}
+.sort-icon-down-passive{
+    width: 25px;
+    height: 25px;
+    background-image: url('img/down_passive.svg');
+    background-repeat: no-repeat;
+    float: right;
+}
+.sort-icon-up-active{
+    width: 25px;
+    height: 25px;
+    background-image: url('img/up_active.svg');
+    background-repeat: no-repeat;
+    float: right;
+}
+.sort-icon-up-passive{
+    width: 25px;
+    height: 25px;
+    background-image: url('img/up_passive.svg');
+    background-repeat: no-repeat;
+    float: right;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.data {
+    width: 80%;
+    padding: 5px;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.del-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    width: 8px;
+    height: 8px;
+    color: silver;
+    padding: 5px;
+    border: 1px solid silver;
+    border-radius: 50%;
+    font-weight: 900;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.del-button::selection {
+    counter-reset: none;
+}
+
+.del-button:hover {
+    background-color: blueviolet;
+    columns: white;
+}
+
+button {
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.add-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(190, 121, 255);
+}
+
+button span {
+    padding: 0 15px 0 10px;
+}
+
+button:hover {
+    box-shadow: 0 0 5px 1px blueviolet;
+}
